@@ -112,14 +112,14 @@ button:focus-visible {
   height: 10dvh;
   background-color: rgb(28, 34, 39);
   margin-right: -4px;}
-.a>.change:nth-child(1) {animation: ani 0.5s forwards;}
-.a>.change:nth-child(2) {animation: ani 0.5s forwards 0.5s;}
+.a>.change:nth-child(4) {animation: ani 0.5s forwards;}
+.a>.change:nth-child(8) {animation: ani 0.5s forwards 0.5s;}
 .a>.change:nth-child(3) {animation: ani 0.5s forwards 1s;}
-.a>.change:nth-child(4) {animation: ani 0.5s forwards 1.5s;}
-.a>.change:nth-child(5) {animation: ani 0.5s forwards 2s;}
+.a>.change:nth-child(7) {animation: ani 0.5s forwards 1.5s;}
+.a>.change:nth-child(2) {animation: ani 0.5s forwards 2s;}
 .a>.change:nth-child(6) {animation: ani 0.5s forwards 2.5s;}
-.a>.change:nth-child(7) {animation: ani 0.5s forwards 3s;}
-.a>.change:nth-child(8) {animation: ani 0.5s forwards 3.5s;}
+.a>.change:nth-child(1) {animation: ani 0.5s forwards 3s;}
+.a>.change:nth-child(5) {animation: ani 0.5s forwards 3.5s;}
 
 @keyframes ani {
   0% {transform: translateX(-500%);}
@@ -140,11 +140,26 @@ button:focus-visible {
   width: 100vw;
   height: 20vh;
   margin-top: -242.375px;
-  background-color: blue;
+  background-color: rgb(125, 125, 224);
   z-index: 2;
-
+  border: 30px ridge rgba(144, 151, 214, 0.6);
+  box-sizing: border-box;
 }
 @keyframes to-the-place {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+img {
+  height: 15.3vh;
+  float: left;
+}
+.heading {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+.heading span {
+  font-size: 2em;
+  color: aliceblue;
+  line-height: 2em;
 }
