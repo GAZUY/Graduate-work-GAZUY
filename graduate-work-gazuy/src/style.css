@@ -326,7 +326,21 @@ img {
   margin-top: 250px;
   perspective: 1000px;
   perspective-origin: 50% 50%;
-  
+
+}
+.light{
+  transform: translate(-50%,-50%);
+  position: absolute;
+  height: 180px;
+  width:  180px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 10px 30px #fff,
+    0 0 160px 60px #f0f,
+    0 0 240px 90px #0ff;
+  left: 50%;
+  top: 50%;
 }
 .cube {
   margin: auto;
@@ -394,7 +408,7 @@ img {
 
 
 
-.wrap:hover .front {
+/* .wrap:hover .front {
   transform: translateZ(300px);
 }
 
@@ -416,7 +430,7 @@ img {
 
 .wrap:hover .bottom {
   transform: rotateX(270deg) translateZ(100px) translateY(100px);
-}
+} */
 
 
 
