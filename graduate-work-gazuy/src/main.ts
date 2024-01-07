@@ -22,3 +22,14 @@ import { setupCounter } from './counter.ts'
 // `
 
 // setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+let x = 0,
+    y = 0;
+
+document.addEventListener('keydown', function(e){
+  if(e.code == 'ArrowLeft') y -= 5;
+  if(e.code == 'ArrowRight') y += 5;
+  if(e.code == 'ArrowUp') x += 5;
+  if(e.code == 'ArrowDown') x -= 5;
+ 
+ (document.querySelector('.cube') as HTMLElement).style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
+});
