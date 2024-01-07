@@ -96,80 +96,171 @@ button:focus-visible {
 } */
 body {
   position: relative;
+  /* padding: 0;
+  margin: 0; */
 }
 .backgr{
-  display: block;
+  display: flex;
   position: fixed;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
   z-index: -1;
   height: 100vh;
-  width: 100vw;
-  background-color: rgb(77, 63, 63);
+  width: 100%;
   box-sizing: border-box;
 }
-.fly {
+.backgr video{
+  height: 100vh;
+  width: 100%;
   position: absolute;
-  display: block;
-  background-image: url('/pictures/i.webp');
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.fly, .fly1, .fly2, .fly3, .fly4, .fly5, .fly6, .fly7, .fly8, .fly90, .fly0, .fly11 {
+  position: absolute;
+  display: flex;
+ 
   width: 10px;
   height: 10px;
   background-position: center;
   background-size: cover;
   top: 50%;
   left: 50%;
+
+}
+.fly{
+  background-image: url('/pictures/css.png');
   transform: translate(-50%,-50%);
   animation: flight 3s ;
-  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+.fly1{
+  background-image: url('/pictures/html.png');
+  transform: translate(-50%,-50%);
   animation: flight1 3s ;
   animation-iteration-count: infinite;
-  
-  /* z-index: -1; */
+  animation-delay: 200ms;
+}
+.fly2{
+  background-image: url('/pictures/js.png');
+  transform: translate(-50%,-50%);
+  animation: flight2 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 300ms;
+}
+.fly3{
+  background-image: url('/pictures/python.png');
+  transform: translate(-50%,-50%);
+  animation: flight3 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 400ms;
+}
+.fly4{
+  background-image: url('/pictures/ts.jpg');
+  transform: translate(-50%,-50%);
+  animation: flight4 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 500ms;
+}
+.fly5{
+  background-image: url('/pictures/vscode.png');
+  transform: translate(-50%,-50%);
+  animation: flight5 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 600ms;
+}
+.fly6{
+  background-image: url('/pictures/css.png');
+  transform: translate(-50%,-50%);
+  animation: flight5 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 2000ms;
+}
+.fly7{
+  background-image: url('/pictures/html.png');
+  transform: translate(-50%,-50%);
+  animation: flight4 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 1800ms;
+}
+.fly8{
+  background-image: url('/pictures/js.png');
+  transform: translate(-50%,-50%);
+  animation: flight3 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 1400ms;
+}
+.fly9{
+  background-image: url('/pictures/python.png');
+  transform: translate(-50%,-50%);
+  animation: flight2 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 1600ms;
+}
+.fly0{
+  background-image: url('/pictures/ts.jpg');
+  transform: translate(-50%,-50%);
+  animation: flight1 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 1200ms;
+}
+.fly11{
+  background-image: url('/pictures/vscode.png');
+  transform: translate(-50%,-50%);
+  animation: flight 3s ;
+  animation-iteration-count: infinite;
+  animation-delay: 1000ms;
 }
 @keyframes flight{
-  0% {
-    transform:scale(2) translate(-50%,-50%);
-    /* width: 10px;
-    height: 10px; */
-  }
-
-  100% {
-    transform:scale(16) translate(-500%,-500%);
-    /* width: 200px;
-    height: 200px; */
-  }
-
+  0% {transform:scale(2) translate(-50%,-50%);}
+  100% {transform:scale(16) translate(-900%,-900%);}
 }
 @keyframes flight1{
-  0% {
-    transform:scale(2) translate(50%,50%);
-    /* width: 10px;
-    height: 10px; */
-  }
-
-  100% {
-    transform:scale(16) translate(500%,500%);
-    /* width: 200px;
-    height: 200px; */
-  }
+  0% {transform:scale(2) translate(50%,50%);}
+  100% {transform:scale(16) translate(-900%,0);}
+}
+@keyframes flight2{
+  0% {transform:scale(2) translate(-50%,-50%);}
+  100% {transform:scale(16) translate(-900%,900%);}
+}
+@keyframes flight3{
+  0% {transform:scale(2) translate(-50%,-50%);}
+  100% {transform:scale(16) translate(900%,900%);}
+}
+@keyframes flight4{
+  0% {transform:scale(2) translate(-50%,-50%);}
+  100% {transform:scale(16) translate(900%,0%);}
+}
+@keyframes flight5{
+  0% {transform:scale(2) translate(-50%,-50%);}
+  100% {transform:scale(16) translate(900%,-900%);}
 }
 .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
-  position: absolute;
-  line-height: 0;
+  position: relative;
   width: 100vw;
   height: 20vh;
-
 }
 
 
-.a>.change {transform: translateX(-500%);
+.a>.change {
+  /* transform: translateX(0); */
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  width: 25dvw;
-  height: 10dvh;
-  background-color: rgb(28, 34, 39);
-  margin-right: -4px;}
-.a>.change:nth-child(4) {animation: ani 0.5s forwards;}
+  width: 0.2%;
+  height: 0.1vh;
+  background-color: rgb(255, 255, 255);
+  animation: to-the-place1 2.5s 2;
+  animation-direction: alternate;
+  /* animation-direction: alternate 2.5s; */
+}
+/* .a>.change:nth-child(4) {animation: ani 0.5s forwards;}
 .a>.change:nth-child(8) {animation: ani 0.5s forwards 0.5s;}
 .a>.change:nth-child(3) {animation: ani 0.5s forwards 1s;}
 .a>.change:nth-child(7) {animation: ani 0.5s forwards 1.5s;}
@@ -187,28 +278,34 @@ body {
   75% {transform: translateX(2%);}
   85% {transform: translateX(-2%);}
   100% {transform: translateX(0);}
-}
+} */
 .final{
   opacity: 0;
   animation: to-the-place 2.5s forwards;
-  animation-delay: 4s;
+  animation-delay: 2.5s;
   position: absolute;
   display: block;
-  width: 100vw;
-  height: 20vh;
-  margin-top: -242.375px;
-  background-color: rgb(125, 125, 224);
+  width: 60%;
+  height: 16vh;
+  /* margin-top: -242.375px; */
+  /* background-color: rgb(125, 125, 224); */
   z-index: 2;
-  border: 30px ridge rgba(144, 151, 214, 0.6);
+  /* border: 30px ridge rgba(144, 151, 214, 0.6); */
   box-sizing: border-box;
 }
 @keyframes to-the-place {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+@keyframes to-the-place1 {
+  0% {opacity: 0;}
+  100% {opacity: 1; transform: scale(300, 160);}
+}
+
 img {
   height: 15.3vh;
   float: left;
+  box-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
 }
 .heading {
   display: block;
@@ -216,7 +313,116 @@ img {
   padding-top: 20px;
 }
 .heading span {
-  font-size: 2em;
-  color: aliceblue;
-  line-height: 2em;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  line-height: 1em;
+  font-weight: 600;
+  /* background: linear-gradient(-45deg, #FEE864, #F5965E); */
+  color: #f4f4f4;
+  text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
 }
+/* ================================================================ -->*/
+.wrap {
+  margin-top: 250px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+.cube {
+  margin: auto;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  transform-style: preserve-3d;
+}
+
+.cube > div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #000;
+  border: solid 1px #eeeeee;
+  color: #ffffff;
+}
+.front {
+  transform: translateZ(200px);
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+
+.top {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.bottom {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+}
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube {
+  animation: rotate 20s infinite linear;
+}
+
+
+
+
+
+
+
+.wrap:hover .front {
+  transform: translateZ(300px);
+}
+
+.wrap:hover .back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrap:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.wrap:hover .left {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrap:hover .top {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrap:hover .bottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+
+
+
+
+.cube > div {
+  transition: transform 0.2s ease-in;
+}
+
+/* ================================================================ -->*/
