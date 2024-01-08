@@ -397,7 +397,7 @@ img {
   transform: rotateX(270deg) translateY(100px);
   transform-origin: bottom center;
 }
-/* @keyframes rotate {
+@keyframes rotate {
   from {
     transform: rotateX(0deg) rotateY(0deg);
   }
@@ -405,9 +405,9 @@ img {
   to {
     transform: rotateX(360deg) rotateY(360deg);
   }
-} */
+}
 
-.cube {
+#cube_rt {
   animation: rotate 20s infinite linear;
 }
 

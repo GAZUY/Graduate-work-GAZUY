@@ -22,14 +22,37 @@ import { setupCounter } from './counter.ts'
 // `
 
 // setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+let cube = document.querySelector('.cube') as HTMLElement
 let x = 0,
     y = 0;
 
 document.addEventListener('keydown', function(e){
-  if(e.code == 'ArrowLeft') y -= 5;
-  if(e.code == 'ArrowRight') y += 5;
-  if(e.code == 'ArrowUp') x += 5;
-  if(e.code == 'ArrowDown') x -= 5;
+  if(e.code == 'ArrowLeft') y -= 5
+  if(e.code == 'ArrowRight') y += 5
+  if(e.code == 'ArrowUp') x += 5
+  if(e.code == 'ArrowDown') x -= 5
  
- (document.querySelector('.cube') as HTMLElement).style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
+ cube.style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
 });
+
+document.addEventListener('DOMContentLoaded',function(){
+  let x = 0
+  let y = 0
+  document.onmousedown = function(event){
+    let target = event;
+    let disX = target.clientX - y
+    let disY = target.clientY - x
+      document.onmousemove = function(event){
+        let target = event;
+        x = target.clientX - disX
+        y = target.clientY - disY
+        cube.style.transform = '  rotateY('+x+'deg) rotateX('+(-y)+'deg)'
+      };
+      document.onmouseup = function(){
+          document.onmousemove = null
+          document.onmouseup = null
+      };
+      return false
+  }
+},false)
+
