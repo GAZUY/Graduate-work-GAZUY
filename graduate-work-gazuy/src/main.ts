@@ -23,6 +23,7 @@ import { setupCounter } from './counter.ts'
 
 // setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 let cube = document.querySelector('.cube') as HTMLElement
+
 let x = 0,
     y = 0;
 
@@ -35,7 +36,7 @@ document.addEventListener('keydown', function(e){
  cube.style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
 });
 
-document.addEventListener('DOMContentLoaded',function(){
+cube.addEventListener('DOMContentLoaded',function(){
   let x = 0
   let y = 0
   document.onmousedown = function(event){

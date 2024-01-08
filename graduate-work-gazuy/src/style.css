@@ -408,7 +408,8 @@ img {
 }
 
 #cube_rt {
-  animation: rotate 20s infinite linear;
+   animation: rotate 20s infinite linear; 
+
 }
 
 
