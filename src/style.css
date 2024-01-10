@@ -131,83 +131,83 @@ body {
 
 }
 .fly{
-  background-image: url('/pictures/css.png');
+  background-image: url('pictures/css.png');
   transform: translate(-50%,-50%);
   animation: flight 3s ;
   animation-iteration-count: infinite;
 }
 .fly1{
-  background-image: url('/pictures/html.png');
+  background-image: url('pictures/html.png');
   transform: translate(-50%,-50%);
   animation: flight1 3s ;
   animation-iteration-count: infinite;
   animation-delay: 200ms;
 }
 .fly2{
-  background-image: url('/pictures/js.png');
+  background-image: url('pictures/js.png');
   transform: translate(-50%,-50%);
   animation: flight2 3s ;
   animation-iteration-count: infinite;
   animation-delay: 300ms;
 }
 .fly3{
-  background-image: url('/pictures/python.png');
+  background-image: url('pictures/python.png');
   transform: translate(-50%,-50%);
   animation: flight3 3s ;
   animation-iteration-count: infinite;
   animation-delay: 400ms;
 }
 .fly4{
-  background-image: url('/pictures/ts.jpg');
+  background-image: url('pictures/ts.jpg');
   transform: translate(-50%,-50%);
   animation: flight4 3s ;
   animation-iteration-count: infinite;
   animation-delay: 500ms;
 }
 .fly5{
-  background-image: url('/pictures/vscode.png');
+  background-image: url('pictures/vscode.png');
   transform: translate(-50%,-50%);
   animation: flight5 3s ;
   animation-iteration-count: infinite;
   animation-delay: 600ms;
 }
 .fly6{
-  background-image: url('/pictures/css.png');
+  background-image: url('pictures/css.png');
   transform: translate(-50%,-50%);
   animation: flight5 3s ;
   animation-iteration-count: infinite;
   animation-delay: 2000ms;
 }
 .fly7{
-  background-image: url('/pictures/html.png');
+  background-image: url('pictures/html.png');
   transform: translate(-50%,-50%);
   animation: flight4 3s ;
   animation-iteration-count: infinite;
   animation-delay: 1800ms;
 }
 .fly8{
-  background-image: url('/pictures/js.png');
+  background-image: url('pictures/js.png');
   transform: translate(-50%,-50%);
   animation: flight3 3s ;
   animation-iteration-count: infinite;
   animation-delay: 1400ms;
 }
 .fly9{
-  background-image: url('/pictures/python.png');
+  background-image: url('pictures/python.png');
   transform: translate(-50%,-50%);
   animation: flight2 3s ;
   animation-iteration-count: infinite;
   animation-delay: 1600ms;
 }
 .fly0{
-  background-image: url('/pictures/ts.jpg');
+  background-image: url('pictures/ts.jpg');
   transform: translate(-50%,-50%);
   animation: flight1 3s ;
   animation-iteration-count: infinite;
   animation-delay: 1200ms;
 }
 .fly11{
-  background-image: url('/pictures/vscode.png');
+  background-image: url('pictures/vscode.png');
   transform: translate(-50%,-50%);
   animation: flight 3s ;
   animation-iteration-count: infinite;

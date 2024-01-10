@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 
 export default {
-  base: '/graduation-work-gazuy/',
+  base: '/graduate-work-gazuy/',
   build: {
     rollupOptions: {
       input: {
