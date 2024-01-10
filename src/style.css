@@ -131,7 +131,7 @@ body {
 
 }
 .fly{
-  background-image: url('pictures/css.png');
+  background-image: url('/public/pictures/css.png');
   transform: translate(-50%,-50%);
   animation: flight 3s ;
   animation-iteration-count: infinite;
