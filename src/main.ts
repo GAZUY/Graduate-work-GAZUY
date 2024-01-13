@@ -88,24 +88,28 @@ document.addEventListener('keydown', function(e){
     cube.style.transform = `rotateY(${y}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
     cube.classList.remove('rotate')
     isAnimate = false
+    console.log (x,y,z)
   }
   
   cube.style.transform = `rotateY(${y}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
 });
 
-cube.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded',function(){
   let x = 0
   let y = 0
+  let z = 0
   document.onmousedown = function(event){
+    cube.classList.remove('rotate')
     let target = event;
     let disX = target.clientX - y
     let disY = target.clientY - x
+    
       document.onmousemove = function(event){
         let target = event;
         x = target.clientX - disX
         y = target.clientY - disY
         
-        cube.style.transform = '  rotateY('+x+'deg) rotateX('+(-y)+'deg)'
+        cube.style.transform = `rotateY(${y}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
       };
       document.onmouseup = function(){
           document.onmousemove = null
